@@ -17,7 +17,7 @@ header .logo {
     border-radius: 50%; /* Makes the element a circle */
     background-color: #cccccc; /* Sets the initial background color to light gray */
     right: 30px; /* Positions the circle 30px from the right edge of its container */
-    top: 50%; /* Positions the circle 50% from the top edge of its container */
+    top: 5%; /* Positions the circle 50% from the top edge of its container */
     transform: translateY(-50%); /* Vertically centers the circle relative to its own height */
 }
 

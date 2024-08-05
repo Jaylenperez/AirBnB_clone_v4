@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // Define the API endpoint
-    const apiUrl = 'http://0.0.0.0:5001/api/v1/status/';
+    // Define the API endpoint. changed to localhost for task 3
+    const apiUrl = 'http://localhost:5001/api/v1/status/';
     
     // Function to check API status
     function checkApiStatus() {
