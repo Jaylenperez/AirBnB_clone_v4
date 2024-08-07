@@ -1,6 +1,5 @@
 $(document).ready(function () {
     const apiUrl = 'http://localhost:5001/api/v1/status/';
-    // Task 4: Define placesSearchUrl to http://localhost:5001/api/v1/places_search/
     const placesSearchUrl = 'http://localhost:5001/api/v1/places_search/';
     
     // Function to check API status
@@ -22,12 +21,14 @@ $(document).ready(function () {
     // Call the function to check API status on page load
     checkApiStatus();
 
+    // Task 5: Function to fetch places
+    
     // Task 4: Function to fetch places. Use ajax to send a POST request with appropriate headers and an empty dictionary.
     $.ajax({
         url: 'http://localhost:5001/api/v1/places_search/',
         type: 'POST',
         contentType: 'application/json',
-        data: JSON.stringify({}), // Empty dict in the body
+        data: JSON.stringify({}),
         dataType: 'json',
         success: function(data) {
           $('.places').empty(); // Clear the section before appending new articles
